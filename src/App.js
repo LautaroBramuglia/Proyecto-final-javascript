@@ -3,10 +3,10 @@ import Navbar from "./components/navbar";
 
 const App = () => {
   return(
-    <main>
+    <div>
       <Navbar/>
-      
-    </main>
+      <itemListContainer greeting='Hola soy el ItemListContainer' />
+    </div>
   );
 }
 

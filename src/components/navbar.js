@@ -1,12 +1,14 @@
 import React from "react";
 import style from "../components/style.css"
-import logo from "../img/logo.png"
 import carrito from "../img/carrito.jpg"
+import CardWidget from "./CartWidget";
+
+
 const navbar= ()=>{
   return(
 
   <header>
-    <img src={logo} alt="logodecelular"/>
+    <CardWidget />
     <h1>Coder-celulares</h1>
     <nav>
       <a href="#">Inicio</a>
@@ -14,7 +16,7 @@ const navbar= ()=>{
       <a href="#">Computadoras</a>
       <a href="#">Sobre-nosotros</a>
     </nav>
-<img src="carrito" alt="fotocarrito" />
+    <img src={carrito} alt="fotocarrito" />
   </header> 
 
   )
