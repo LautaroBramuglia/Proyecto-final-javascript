@@ -1,6 +1,8 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemCount from './components/ItemCount';
 import Navbar from "./components/navbar";
+import itemListContainer from './components/itemListContainer';
 
 const App = () => {
   const onAdd= (count) =>{
