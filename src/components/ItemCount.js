@@ -1,40 +1,21 @@
-import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-const ItemCount = ({ initial, stock, onAdd }) => {
-  const [count, setCount ] = useState(initial)
-
-const suma =() =>{
-    if(count < stock){
-    setCount(count + 1)
-}
-else{
-    alert('maximo stock')
-}
-}
-
-const resta =() =>{
-    if(count >initial){
-    setCount(count - 1)
-}
-else{
-    alert('stock minimo')
-}
-}
-const Reset = () => {
-    setCount(initial)
-}
-
-    
+function ItemCount() {
   return (
-    <div>
-        <h1>{count}</h1>
-        <button onClick={suma}>+</button> 
-        <button onClick={resta}>-</button> 
-        <button onClick={()=>onAdd(count)}>Agregar al carrito</button> 
-        <button onClick={Reset}>Reset</button> 
-    </div>
-
-  )
+<Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={Image}/>
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>
+          ${price}
+          <br/>
+          stock:{stock}
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+  );
 }
 
-export default ItemCount
+export default ItemCount;
