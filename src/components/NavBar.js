@@ -3,6 +3,7 @@ import './NavBar.css'
 import logo from '../imagenes/logoTienda.png'
 import Icono from "../imagenes/icono.png"
 import { NavLink } from 'react-router-dom'
+import CartWidget from '../components/CartWidget'
 
 const NavBar = () =>{
 
@@ -25,7 +26,7 @@ const NavBar = () =>{
         <nav>
             {categorias.map((categorias)=><NavLink key={categorias} to={`/category/${categorias}`}>{categorias}</NavLink>)}
         </nav>
-        <img src={Icono} alt="carrito" />
+        <CartWidget/>
     </header>
     )
 }
