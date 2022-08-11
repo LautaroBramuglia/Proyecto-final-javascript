@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
 import {contexto} from './CartContext'
 import {NavLink} from 'react-router-dom'
-//import Formulario from './Formulario'
+import Formulario from './Formulario'
 import {doc, addDoc, collection, serverTimestamp, updateDoc} from 'firebase/firestore'
 import {db} from '../firebase/firebase'
 
