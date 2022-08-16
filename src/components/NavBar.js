@@ -21,7 +21,7 @@ const Navbar = () => {
         <header style={styles.container}>
             <div style={styles.branchContainer}>
                 <Link to="/"><img style={styles.logo} src={logo} alt="" /></Link>
-                <h1 style={styles.title}>Mi tienda online</h1>
+                <h1 style={styles.title}>Coder Celulares</h1>
             </div>
             <div style={styles.links}>
                 <nav>
